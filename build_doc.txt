@@ -1,0 +1,16 @@
+1. DK tài khoản:
+- name + email
+- nếu tài chưa tồn tại (check email) thì login success-> hide form login -> show form chat
+- nếu tài khoản đã tồn tại (check email) thông báo
+2. form chat:
+- tai khoản các nhân
+- list users(double click để chát vs 1 user)
+	- A click chat vs B thì auto create room trung gian để 2 người chát vs nhau, đồng thời join A, B vào room chung gian(cập nhật room hiện tại của từng user thông qua socket)
+	- trương họp A click de chát vs B , sau đó B click de chat vs A thì kiem tra xem A, B có trong 1 room hay chưa, nếu có rùi thi ko join room nữa.(phan nay phải thử)
+	- trương hợp A click chat vs B, sau đó A click chát vs C , rùi sau đó quay lại chát vs B thì vẫn phải lưu tin nhắn đã chát vs B lúc trước đó.
+	
+3. logout:
+- click nút đăng xuất:
+	- xoa tai khoan luon
+	- chuyen qua form login
+	- cap nhat lai danh sach nhung tai khoan hien co
